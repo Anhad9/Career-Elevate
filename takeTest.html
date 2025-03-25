@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Recommendation Quiz</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .question { margin-bottom: 15px; }
+        button { padding: 10px; background: blue; color: white; border: none; cursor: pointer; }
+        #results { margin-top: 20px; padding: 10px; border: 1px solid #ddd; }
+    </style>
+</head>
+<body>
+    <h1>Career Recommendation Quiz</h1>
+    <form id="careerQuiz">
+        
+        <!-- 1. Realistic -->
+        <div class="question">
+            <p>1. Do you enjoy building or fixing things with your hands?</p>
+            <label><input type="radio" name="q1" value="R"> Yes</label>
+            <label><input type="radio" name="q1" value=""> No</label>
+        </div>
+
+        <!-- 2. Investigative -->
+        <div class="question">
+            <p>2. Do you like solving science or math problems?</p>
+            <label><input type="radio" name="q2" value="I"> Yes</label>
+            <label><input type="radio" name="q2" value=""> No</label>
+        </div>
+
+        <!-- 3. Artistic -->
+        <div class="question">
+            <p>3. Do you enjoy writing, painting, or creative activities?</p>
+            <label><input type="radio" name="q3" value="A"> Yes</label>
+            <label><input type="radio" name="q3" value=""> No</label>
+        </div>
+
+        <!-- 4. Social -->
+        <div class="question">
+            <p>4. Would you like to work in a hospital, school, or social service?</p>
+            <label><input type="radio" name="q4" value="S"> Yes</label>
+            <label><input type="radio" name="q4" value=""> No</label>
+        </div>
+
+        <!-- 5. Enterprising -->
+        <div class="question">
+            <p>5. Do you enjoy leading and making business decisions?</p>
+            <label><input type="radio" name="q5" value="E"> Yes</label>
+            <label><input type="radio" name="q5" value=""> No</label>
+        </div>
+
+        <!-- 6. Conventional -->
+        <div class="question">
+            <p>6. Do you like organizing files, schedules, or financial records?</p>
+            <label><input type="radio" name="q6" value="C"> Yes</label>
+            <label><input type="radio" name="q6" value=""> No</label>
+        </div>
+
+        <!-- 7. Realistic -->
+        <div class="question">
+            <p>7. Do you enjoy working outdoors with plants, animals, or machines?</p>
+            <label><input type="radio" name="q7" value="R"> Yes</label>
+            <label><input type="radio" name="q7" value=""> No</label>
+        </div>
+
+        <!-- 8. Investigative -->
+        <div class="question">
+            <p>8. Do you like researching new topics and finding solutions?</p>
+            <label><input type="radio" name="q8" value="I"> Yes</label>
+            <label><input type="radio" name="q8" value=""> No</label>
+        </div>
+
+        <!-- 9. Enterprising -->
+        <div class="question">
+            <p>9. Would you rather persuade people to buy something than work alone?</p>
+            <label><input type="radio" name="q9" value="E"> Yes</label>
+            <label><input type="radio" name="q9" value=""> No</label>
+        </div>
+
+        <!-- 10. Conventional -->
+        <div class="question">
+            <p>10. Do you prefer structured, rule-based work over unpredictable tasks?</p>
+            <label><input type="radio" name="q10" value="C"> Yes</label>
+            <label><input type="radio" name="q10" value=""> No</label>
+        </div>
+
+        <button type="button" onclick="submitQuiz()">Get Career Recommendations</button>
+    </form>
+
+    <div id="results"></div>
+
+    <script src="./server/lemon.js"></script>
+</body>
+</html>

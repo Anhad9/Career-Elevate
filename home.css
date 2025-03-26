@@ -6,7 +6,7 @@
 .main{
     margin:0;
     min-height:100vh;
-    background-image: linear-gradient(to left, #2c2b2b 42%, transparent 40%), url(Images/main1.webp);   
+    background-image: linear-gradient(to left, #2c2b2b 42%, transparent 40%), url(././images/main1.webp);   
     background-position: right, left 0px;
     background-repeat: no-repeat, no-repeat;
     background-color: rgba(0, 0, 0, 0.2 ); 

@@ -135,7 +135,7 @@
 
     .mission-image {
         flex: 1;
-        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url('./images/thinking6.png');
+        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url("./images/thinking6.png");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
